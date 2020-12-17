@@ -1,1 +1,28 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
+int main(void)
+{
+    int i;
+    int j;
+    char* plateau[8][8] = {
+        {"tn ","cn ","fn ","dn ","rn ","fn ","cn ","tn\n"},
+        {"pn ","pn ","pn ","pn ","pn "," pn ","pn ","pn\n"},
+        {"0 ","0 ","0 ","0 ","0 ","0 ","0 ","0 ","0 ","0\n"},
+        {"0 ","0 ","0 ","0 ","0 ","0 ","0 ","0 ","0 ","0\n"},
+        {"0 ","0 ","0 ","0 ","0 ","0 ","0 ","0 ","0 ","0\n"},
+        {"0 ","0 ","0 ","0 ","0 ","0 ","0 ","0 ","0 ","0\n"},
+        {"pb ","pb ","pb ","pb ","pb ","pb ","pb ","pb\n"},
+        {"tb ","cb ","fb ","db ","rb ","fb ","cb ","tb\n"}
+    };
+    
+    for (i=0;i<8;i++)
+    {
+        for (j=0;j<8;j++)
+        {
+            printf("%s", plateau[i][j]);
+        }
+    }
+    return 0;
+}
